@@ -1,0 +1,382 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+:root{
+    --main:black;
+}
+
+.menu-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 100;
+    padding: 15px 50px;
+
+}
+
+.menu-options{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 30px;
+}
+
+.menu-btn{
+    margin-left: 30px;
+    font-size: 22px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.background{
+    position: absolute;
+    width: 1760px;
+
+    top:-100px; /* тут при анімації змінювати на 85%*/
+    left: 50%;
+    z-index:1;
+    animation: moveDown 2s ease-in-out;
+
+}
+
+.stars2{
+    position: absolute;
+    mix-blend-mode: screen;
+    width: 1760px;
+
+    top:-100px; /* тут при анімації змінювати на 85%*/
+    left: 50%;
+    z-index: 2;
+    animation: moveDown 2s ease-in-out;
+}
+
+.sun3{
+    position: absolute;
+    width: 450px;
+
+    top:calc(50% - 120px); /* тут при анімації змінювати на 85%*/
+    left: calc(50%);
+    z-index: 3;
+    animation: moveUp 2s ease-in-out;
+}
+
+.mountain1{
+    position: absolute;
+    width: 1400px;
+
+    top:calc(50% + 280px); /* тут при анімації змінювати на 85%*/
+    left: calc(50% - 300px);
+    z-index: 3;
+    animation: moveUp 2s ease-in-out;
+}
+
+.mountain2{
+    position: absolute;
+    width: 1400px;
+
+    top:calc(50% + 220px); /* тут при анімації змінювати на 85%*/
+    left: calc(50% + 200px);
+    z-index: 3;
+    animation: moveUp 2s ease-in-out;
+}
+
+
+.building4{
+    position: absolute;
+    width: 145px;
+
+    top:calc(50% + 120px); 
+    left: calc(50%);
+    z-index: 4;
+    animation: moveUp 2s ease-in-out;
+}
+.building5{
+    position: absolute;
+    width: 145px;
+
+    top:calc(50% + 250px); /* тут при анімації змінювати на 85%*/
+    left: calc(50% + 150px);
+    z-index: 5;
+    animation: moveUp 2s ease-in-out;
+}
+.building6{
+    position: absolute;
+    width: 120px;
+
+    top:calc(50% + 230px); 
+    left: calc(50% + 290px);
+    z-index: 6;
+    animation: moveUp 2s ease-in-out;
+}
+
+.building7{
+    position: absolute;
+    width: 130px;
+
+    top:calc(50% + 180px); 
+    left: calc(50% - 250px);
+    z-index: 7;
+    animation: moveUp 2s ease-in-out;
+}
+
+.building8{
+    position: absolute;
+    width: 114px;
+
+    top:calc(50% + 240px);
+    left: calc(50% - 110px);
+    z-index: 8;
+    animation: moveUp 2s ease-in-out;
+}
+
+.building9{
+    position: absolute;
+    width: 140px;
+
+    top:calc(50% + 240px);
+    left: calc(50% - 400px);
+    z-index: 9;
+    animation: moveUp 2s ease-in-out;
+}
+
+.building10{
+    position: absolute;
+    width: 110px;
+
+    top:calc(50% + 280px); 
+    left: calc(50% + 230px);
+    z-index: 11;
+    animation: moveUp 2s ease-in-out;
+}
+
+.light10{
+    position: absolute;
+    width: 700px;
+
+    top:calc(50% - 200px); 
+    left: calc(50% - 50px);
+    z-index: 10;
+    animation: rotate1 5s infinite linear alternate;
+    animation-fill-mode: forwards;
+    animation: moveUp 2s ease-in-out;
+}
+
+.building11{
+    position: absolute;
+    width: 110px;
+
+    top:calc(50% + 280px); 
+    left: calc(50% + 80px);
+    z-index: 12;
+    animation: moveUp 2s ease-in-out;
+}
+
+.building12{
+    position: absolute;
+    width: 110px;
+
+    top:calc(50% + 270px); 
+    left: calc(50% + 370px);
+    z-index: 13;
+    animation: moveUp 2s ease-in-out;
+}
+
+.light13{
+    position: absolute;
+    width: 500px;
+
+    top:calc(50% - 350px); 
+    left: calc(50% - 560px);
+    z-index: 14;
+    animation: moveUp 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.building13{
+    position: absolute;
+    width: 120px;
+
+    top:calc(50% + 200px); 
+    left: calc(50% + 420px);
+    z-index: 15;
+    animation: moveUp 2s ease-in-out;
+}
+
+.building14{
+    position: absolute;
+    width: 130px;
+
+    top:calc(50% + 250px); 
+    left: calc(50% + 590px);
+    z-index: 16;
+    animation: moveUp 2s ease-in-out;
+}
+
+.building15{
+    position: absolute;
+    width: 110px;
+
+    top:calc(50% + 250px); 
+    left: calc(50% - 320px);
+    z-index: 17;
+    animation: moveUp 2s ease-in-out;
+}
+
+.building16{
+    position: absolute;
+    width: 130px;
+
+    top:calc(50% + 230px); 
+    left: calc(50% - 160px);
+    z-index: 18;
+    animation: moveUp 2s ease-in-out;
+}
+
+.building17{
+    position: absolute;
+    width: 130px;
+
+    top:calc(50% + 270px); 
+    left: calc(50% + 500px);
+    z-index: 19;
+    animation: moveUp 2s ease-in-out;
+}
+.building18{
+    position: absolute;
+    width: 140px;
+
+    top:calc(50% + 230px); 
+    left: calc(50% - 560px);
+    transform: translate(-50%,-50%);
+    z-index: 20;
+    animation: moveUp 2s ease-in-out;
+}
+.building19{
+    position: absolute;
+    width: 120px;
+
+    top:calc(50% + 310px); 
+    left: calc(50% - 480px);
+
+    z-index: 21;
+    animation: moveUp 2s ease-in-out;
+}
+
+.building20{
+    position: absolute;
+    width: 100px;
+
+    top:calc(50% + 310px); 
+    left: calc(50% + 130px);
+
+    z-index: 22;
+    animation: moveUp 2s ease-in-out;
+}
+.building21{
+    position: absolute;
+    width: 100px;
+
+    top:calc(50% + 310px); 
+    left: calc(50% - 250px);
+
+    z-index: 23;
+    animation: moveUp 2s ease-in-out;
+}
+.building22{
+    position: absolute;
+    width: 120px;
+
+    top:calc(50% + 285px); 
+    left: calc(50% - 70px);
+
+    z-index: 24;
+    animation: moveUp 2s ease-in-out;
+}
+
+.building23{
+    position: absolute;
+    width: 120px;
+
+    top:calc(50% + 310px); 
+    left: calc(50% + 320px);
+
+    z-index: 25;
+    animation: moveUp 2s ease-in-out;
+}
+
+.kolky{
+    position: absolute;
+    font-size: 120px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    top:calc(50% + 40px); 
+    left: calc(50%);
+    color: white;
+    z-index: 10;
+    text-shadow: -4px 4px rgb(61, 10, 93);
+    animation: moveUp 2s ease-in-out;
+
+}
+
+.parallax{
+    pointer-events: none;
+
+
+
+}
+
+@keyframes rotate1 {
+    0% {
+    
+        transform-origin: bottom left;
+      transform: rotate(0deg);
+    }
+    100% {
+        transform-origin: bottom left;
+      transform: rotate(20deg);
+    }
+  }
+
+  
+@keyframes rotate2 {
+    0% {
+        transform-origin: bottom right;
+      transform: rotate(0deg);
+    }
+    100% {
+        transform-origin: bottom right;
+      transform: rotate(20deg);
+    }
+  }
+
+  @keyframes moveDown {
+    0% {
+      top:90%;
+      transition: 4s all ease;
+    }
+  }
+
+  @keyframes moveUp {
+    0% {
+      top:1200px;
+      transition: 4s all ease;
+    }
+  }
